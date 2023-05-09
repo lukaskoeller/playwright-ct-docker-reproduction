@@ -1,0 +1,1 @@
+export { default as SvgBirthdayCakeSolid } from "./src/BirthdayCakeSolid";
