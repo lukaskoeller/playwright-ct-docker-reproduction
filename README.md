@@ -45,7 +45,7 @@ Answer prompt with Yes ("Y")
 Run tests:
 
 ```bash
-pnpm test-ct
+pnpm --filter "@ct/app" test-ct
 ```
 
 See "Could not resolve" error:
