@@ -1,5 +1,9 @@
 # playwright-ct-docker-reproduction
 
+## RESOLVED
+
+Follow the "Getting started" steps from below.
+
 The original goal was to add snapshots for the linux platform using the docker image provided by playwright. This is to enable Gitlab CI using linux snapshots.
 
 Also see some reference threads about the topic:
@@ -29,15 +33,15 @@ Run docker container (see [Visual Comparisons](https://playwright.dev/docs/test-
 ```bash
 docker run --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.37.0-jammy /bin/bash
 ls --all #check that everything is mounted, including `.pnpm-store`.
-npm installbash
 corepack enable
 corepack prepare pnpm@latest-8 --activate
+pnpm config set store-dir .pnpm-store
 ```
 
 Install packages in docker container and run tests:
 
 ```bash
-pnpm i
+pnpm install --frozen-lockfile
 ```
 
 Answer prompt with Yes ("Y")
