@@ -47,7 +47,7 @@ Answer prompt with Yes ("Y")
 Run tests:
 
 ```bash
-pnpm --filter "@ct/app" test-ct
+pnpm --filter "@ct/app" test-ct --update-snapshots
 ```
 
 ## OUTDATED
