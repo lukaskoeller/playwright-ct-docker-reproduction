@@ -30,7 +30,6 @@ Run docker container (see [Visual Comparisons](https://playwright.dev/docs/test-
 
 ```bash
 docker run --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.37.0-jammy /bin/bash
-ls --all #check that everything is mounted, including `.pnpm-store`.
 corepack enable
 corepack prepare pnpm@latest-8 --activate
 pnpm config set store-dir .pnpm-store
