@@ -1,8 +1,6 @@
 # playwright-ct-docker-reproduction
 
-## RESOLVED
-
-Follow the "Getting started" steps from below.
+## ⚠️⚠️⚠️ RESOLVED: Follow the "Getting started" steps from below ⚠️⚠️⚠️
 
 The original goal was to add snapshots for the linux platform using the docker image provided by playwright. This is to enable Gitlab CI using linux snapshots.
 
