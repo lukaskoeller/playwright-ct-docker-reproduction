@@ -50,6 +50,8 @@ Run tests:
 pnpm --filter "@ct/app" test-ct
 ```
 
+## OUTDATED
+
 See "Could not resolve" error:
 
 ```txt
